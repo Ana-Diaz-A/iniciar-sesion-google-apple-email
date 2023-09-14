@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Iniciar sesión con google, apple o email</title> <!--TÍTULO-->
+        <link rel="stylesheet" href="style.css"> <!--CSS-->
+    </head>
+
+    <body>
+        <div class="login-wrapper"> <!--CONTENEDOR PRINCIPAL-->
+            <div class="login-side"> <!--LADO DEL LOGIN (IZQUIERDA)-->
+                <a href="#" title="Logo">
+                    <img class="logo" src="img/logo.png" alt="Logo"> <!--IMG-->
+                </a>
+                <div class="my-form__wrapper">
+                    <div class="login-welcome-row">
+                        <h1>Bienvenido de nuevo &#x1F44F;</h1>
+                        <p>Por favor ingresa tus datos.</p>
+                    </div>
+
+                    <form class="my-form">
+                        <div class="socials-row"> <!--GOOGLE-->
+                            <a href="#" title="Google">
+                                <img src="img/google.png" alt="Google"> <!--IMG-->
+                                Inicia sesión con Google
+                            </a>
+                            <a href="#" title="Apple"> <!--APPLE-->
+                                <img src="img/apple.png" alt="Apple"> <!--IMG-->
+                                Inicia sesión con Apple
+                            </a>
+                        </div>
+
+                        <div class="divider"> <!--LÍNEA DIVISORIA-->
+                            <div class="divider-line"></div>
+                            o
+                            <div class="divider-line"></div>
+                        </div>
+
+                        <div class="text-field">
+                            <label for="email">Correo electrónico:</label> <!--EMAIL-->
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="introduce tu correo electrónico"
+                                required
+                            >
+                            <img alt="Email Icon" title="Email Icon" src="img/email.svg"> <!--IMG-->
+                        </div>
+
+                        <div class="text-field">
+                            <label for="password">Password:</label> <!--CONTRASEÑA-->
+                            <input
+                                id="password"
+                                type="password"
+                                name="password"
+                                placeholder="introduce tu contraseña"
+                                title="Mínimo 6 caracteres, al menos 1 letra y 1 número."
+                                pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{6,}$"
+                                required
+                            >
+                            <img alt="Password Icon" title="Password Icon" src="img/password.svg"> <!--IMG-->
+                        </div>
+
+                        <input type="submit" class="my-form__button" value="Iniciar sesión"> <!--BOTÓN-->
+
+                        <div class="my-form__actions">
+                            <div class="my-form__row">
+                                <span>¿Olvidaste tu contraseña?</span>
+                                <a href="#" title="Reset Password"> Restablecer la contraseña </a>
+                            </div>
+
+                            <div class="my-form__signup">
+                                <a href="#" title="Create Account"> Crear cuenta </a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="info-side"> <!--LADO DE INFORMACIÓN (DERECHA)-->
+                <img src="img/imagen.png" alt="Mock" class="mockup"> <!--IMG-->
+                <div class="welcome-message">
+                    <h2>Localizador de oficinas</h2>
+                    <p>Localiza tu oficina en cualquier parte del mundo.</p>    
+                </div>
+            </div>
+        </div>
+
+        <script src="script.js"></script> <!--JS-->
+    </body>
+</html>
